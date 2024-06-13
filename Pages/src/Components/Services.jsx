@@ -3,30 +3,30 @@ import { useState } from "react";
 const services = [
   {
     id: 1,
-    backgroundImage: 'url(sec1.jpg)',
+    backgroundImage: 'url(sec8.jpg)',
     heading: 'ESG Risk Advisory',
-    subheading: 'The risks and impacts emanating from environment, social and governance (ESG) factors and their management entails...',
+    subheading: 'The risks and impacts emanating from environment, social and governance(ESG)...',
     link: '/page1',
   },
   {
     id: 2,
-    backgroundImage: 'url(sec2.jpg)',
+    backgroundImage: 'url(sec7.jpg)',
     heading: 'Mergers & Acquisitions',
-    subheading: 'EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages of investment lifecycle. By providing...',
+    subheading: 'EGP offers services to Clients in Mergers & Acquisitions (M&A) through ...',
     link: '/page2',
   },
   {
     id: 3,
-    backgroundImage: 'url(sec5.jpg)',
+    backgroundImage: 'url(sec6.jpg)',
     heading: 'EHS & Social Advisory',
-    subheading: "EGP provides advisory services to identify, measure and manage the ESG performance of Clients to achieve improved...",
+    subheading: "EGP provides advisory services to identify, measure and manage the ESG ...",
     link: '/page3',
   },
   {
     id: 4,
-    backgroundImage: 'url(sec4.jpg)',
+    backgroundImage: 'url(sec9.jpg)',
     heading: 'Social Impact',
-    subheading: 'With growing economies around the world and ever-changing business needs, managing social risks and impacts has...',
+    subheading: 'With growing economies around the world and ever-changing business needs...',
     link: '/page4',
   },
 ];
@@ -51,22 +51,34 @@ const Services = () => {
           onMouseEnter={() => setHoveredService(index)}
           onMouseLeave={() => setHoveredService(0)}
         >
-          <div className="relative flex flex-col items-center justify-end w-full h-full p-12 text-white bg-black bg-opacity-10 hover:bg-opacity-20 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 ">
+          <div className="relative flex flex-col items-center justify-end w-full h-full p-12 text-white bg-black bg-opacity-10  hover:bg-opacity-30 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 ">
             <div className="absolute bottom-[50px] flex flex-col items-start transition-all duration-1000 ease-in-out left-[30px]">
-              <h2 className={`text-2xl sm:text-3xl md:text-4xl  ${hoveredService === index ? 'mb-8' : 'mb-2'}`}>
+              <h2 className={`text-2xl sm:text-2xl md:text-3xl  ${hoveredService === index ? 'mb-8' : 'mb-2'}`}>
                 {service.heading}
               </h2>
-              <p className={`text-lg sm:text-xl transition-opacity duration-500 ease-in-out ${hoveredService === index ? 'opacity-100' : 'opacity-0'}`}>
+              <p className={`text-lg sm:text-base transition-opacity duration-500 ease-in-out ${hoveredService === index ? 'opacity-100' : 'opacity-0'}`}>
                 {service.subheading}
               </p>
               <button
-                className={`py-2 px-4 rounded mt-4 transition duration-500 ease-in-out ${hoveredService === index ? 'bg-[#00a7ff] text-black' : 'bg-gray-800 text-white'}`}
+                className="py-2 px-4 rounded mt-4 transition duration-500 ease-in-out relative overflow-hidden text-white bg-transparent border-none flex items-center"
                 onClick={() => {
                   window.location.href = service.link;
                 }}
-                style={{ marginLeft: '10px' }} // Shifting button 10px to the left
               >
-                Discover →
+                <span
+                  className={`transition-all duration-500 ease-in-out ${
+                    hoveredService === index? 'opacity-100 translate-x-[-10px]' : 'opacity-0 translate-x-2'
+                  }`}
+                >
+                  Discover
+                </span>
+                <span
+                  className={`ml-2 transition-all duration-500 ease-in-out ${
+                    hoveredService === index? 'opacity-100 translate-x-[-10px]' : 'opacity-100 -translate-x-2'
+                  }`}
+                >
+                  →
+                </span>
               </button>
             </div>
           </div>

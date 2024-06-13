@@ -1,11 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
     const [resourcesOpen, setResourcesOpen] = useState(false);
     const [solutionsOpen, setSolutionsOpen] = useState(false);
+    const [showHeader, setShowHeader] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const controlHeader = () => {
+        if (typeof window !== 'undefined') {
+            if (window.scrollY > lastScrollY) { // if scroll down
+                setShowHeader(false);
+            } else { // if scroll up
+                setShowHeader(true);
+            }
+            setLastScrollY(window.scrollY);
+        }
+    };
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', controlHeader);
+
+            // cleanup function
+            return () => {
+                window.removeEventListener('scroll', controlHeader);
+            };
+        }
+    }, [lastScrollY]);
 
     return (
-        <header className="fixed top-0 left-0 z-30 w-full bg-gray-800">
+        <header className={`fixed top-0 left-0 z-30 w-full bg-gray-800 transition-transform duration-1000 ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="container mx-auto flex items-center justify-between px-5 py-3">
                 <div className="flex items-center space-x-3">
                     <img src="egplogo.png" alt="Logo" className="h-[60px]" />
