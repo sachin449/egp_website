@@ -1,7 +1,7 @@
 
 import './App.css'
 import Services from './Components/Services'
-import Header from './Components/Header'
+//import Header from './Components/Header'
 import Extra from './Components/Extra'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      
       <Services />
       <Extra />
     </>

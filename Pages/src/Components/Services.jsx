@@ -5,28 +5,28 @@ const services = [
     id: 1,
     backgroundImage: 'url(sec1.jpg)',
     heading: 'ESG Risk Advisory',
-    subheading: '',
+    subheading: 'The risks and impacts emanating from environment, social and governance (ESG) factors and their management entails...',
     link: '/page1',
   },
   {
     id: 2,
     backgroundImage: 'url(sec2.jpg)',
     heading: 'Mergers & Acquisitions',
-    subheading: '',
+    subheading: 'EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages of investment lifecycle. By providing...',
     link: '/page2',
   },
   {
     id: 3,
-    backgroundImage: 'url(sec3.jpg)',
+    backgroundImage: 'url(sec5.jpg)',
     heading: 'EHS & Social Advisory',
-    subheading: "",
+    subheading: "EGP provides advisory services to identify, measure and manage the ESG performance of Clients to achieve improved...",
     link: '/page3',
   },
   {
     id: 4,
     backgroundImage: 'url(sec4.jpg)',
     heading: 'Social Impact',
-    subheading: '',
+    subheading: 'With growing economies around the world and ever-changing business needs, managing social risks and impacts has...',
     link: '/page4',
   },
 ];
@@ -51,7 +51,7 @@ const Services = () => {
           onMouseEnter={() => setHoveredService(index)}
           onMouseLeave={() => setHoveredService(0)}
         >
-          <div className="relative flex flex-col items-center justify-end w-full h-full p-12 text-white bg-black bg-opacity-50 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 hover:border-slate-900">
+          <div className="relative flex flex-col items-center justify-end w-full h-full p-12 text-white bg-black bg-opacity-10 hover:bg-opacity-20 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 ">
             <div className="absolute bottom-[50px] flex flex-col items-start transition-all duration-1000 ease-in-out left-[30px]">
               <h2 className={`text-2xl sm:text-3xl md:text-4xl  ${hoveredService === index ? 'mb-8' : 'mb-2'}`}>
                 {service.heading}
