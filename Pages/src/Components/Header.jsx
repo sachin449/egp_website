@@ -31,7 +31,7 @@ const Header = () => {
     }, [lastScrollY]);
 
     return (
-        <header className={`fixed top-0 left-0 z-30 w-full transition-transform duration-1000 ${showHeader ? 'translate-y-0' : '-translate-y-full'} ${isAtTop ? 'bg-transparent' : 'bg-gray-800'}`}>
+        <header className={`  fixed top-0 left-0 z-30 w-full transition-transform duration-1000 ${showHeader ? 'translate-y-0' : '-translate-y-full'} ${isAtTop ? 'bg-transparent' : 'bg-gray-800'}`}>
             <div className="container mx-auto flex items-center justify-between px-5 py-3">
                 <div className="flex items-center space-x-3">
                     <img src="egplogo.png" alt="Logo" className="h-[60px]" />
@@ -76,7 +76,7 @@ const Header = () => {
                         </li>
                         <li className="relative">
                             <button
-                                className="text-white text-lg leading-none py-2 hover:text-gray-300 "
+                                className="  text-white text-lg leading-none py-2 hover:text-gray-300 "
                                 onMouseEnter={() => setResourcesOpen(true)}
                                 onMouseLeave={() => setResourcesOpen(false)}
                             >
