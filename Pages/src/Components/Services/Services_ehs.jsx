@@ -63,8 +63,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
       {/* Heading and Subheading */}
       <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
         <div className="mb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-medium-bold mb-6">EHS & SOCIAL ADVISORY</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-2xl md:text-medium-bold">
+          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">EHS & SOCIAL ADVISORY</h1>
+          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
             EGP provides advisory services to identify, measure and manage the ESG performance
              of Clients to achieve improved operational benefits in the long run. The enhancement 
              of ESG performance will support the Client to demonstrate their commitment of ESG factors in their operations.
@@ -88,9 +88,9 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
                   onClick={() => handleToggle(index)}
                   style={{ minHeight: '48px' }} // Ensure a minimum height for consistent baseline alignment
                 >
-                  <h2 className="text-2xl sm:text-2xl flex-1">{category.title}</h2>
-                  <span className="text-xl sm:text-2xl flex-shrink-0 ml-4">
-                    {activeIndex === index ? <FaMinus /> : <FaPlus />}
+                  <h2 className="text-xl sm:text-xl flex-1">{category.title}</h2>
+                  <span className="text-xl sm:text-xl flex-shrink-0 ml-4">
+                    {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
                 {activeIndex === index && (

@@ -68,8 +68,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
       {/* Heading and Subheading */}
       <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
         <div className="mb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-medium-bold mb-6">SOCIAL IMPACT</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-2xl md:text-medium-bold">
+          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">SOCIAL IMPACT</h1>
+          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
             With growing economies around the world and ever-changing business needs, 
             managing social risks and impacts has become an absolute necessity. Right
              community engagement processes, and addressing community needs, help obtain
@@ -83,8 +83,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
       
       
       {/* New Section: Case Showcase */}
-      <div className=" bg-gray-100 py-16">
-        <div className="container mx-auto">
+      <div className=" bg-gray-100 px-20 py-16">
+        <div className="container mx-20 px-">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00a7ff] mb-12">Our Areas Of Expertise</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
             {categories.map((category, index) => (
@@ -94,9 +94,9 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
                   onClick={() => handleToggle(index)}
                   style={{ minHeight: '48px' }} // Ensure a minimum height for consistent baseline alignment
                 >
-                  <h2 className="text-2xl sm:text-2xl flex-1">{category.title}</h2>
-                  <span className="text-xl sm:text-2xl flex-shrink-0 ml-4">
-                    {activeIndex === index ? <FaMinus /> : <FaPlus />}
+                  <h2 className="text-lg sm:text-lg flex-1">{category.title}</h2>
+                  <span className="text-xl sm:text-xl flex-shrink-0 ml-4">
+                    {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
                 {activeIndex === index && (

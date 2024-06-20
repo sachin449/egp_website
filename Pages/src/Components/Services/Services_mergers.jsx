@@ -44,8 +44,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
       {/* Heading and Subheading */}
       <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
         <div className="mb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-medium-bold mb-6">MERGERS & ACQUISITIONS</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-2xl md:text-medium-bold">
+          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">MERGERS & ACQUISITIONS</h1>
+          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
           EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages
            of investment lifecycle. By providing experienced advisory services EGP supports 
            the Client on target businesses which may be pertinent to making a well-informed M&A decision.
@@ -67,9 +67,9 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
                   className="flex justify-between items-center cursor-pointer bg-transparent text-gray-700 border-b border-gray-300 py-2"
                   onClick={() => handleToggle(index)}
                 >
-                  <h2 className="text-2xl sm:text-2xl ">{category.title}</h2>
-                  <span className="text-xl sm:text-2xl">
-                    {activeIndex === index ? <FaMinus /> : <FaPlus />}
+                  <h2 className="text-xl sm:text-xl ">{category.title}</h2>
+                  <span className="text-xl sm:text-xl">
+                  {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
                 {activeIndex === index && (

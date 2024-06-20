@@ -62,8 +62,8 @@ export const Market_realestate = () => {
       {/* Heading and Subheading */}
       <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
         <div className="mb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-medium-bold mb-6">Infrastructure & Real Estate</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-2xl md:text-medium-bold">
+          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Infrastructure & Real Estate</h1>
+          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
             We have been providing services to Client in sectors of Infrastructure & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality, Financial Institution & Funds and Health & Education.
           </h2>
         </div>

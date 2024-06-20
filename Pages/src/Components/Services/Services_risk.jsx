@@ -104,8 +104,8 @@ export const Services_risk = () => {
       {/* Heading and Subheading */}
       <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
         <div className="mb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-medium-bold mb-6">ESG RISK ADVISORY</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-2xl md:text-medium-bold">
+          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">ESG RISK ADVISORY</h1>
+          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
           The risks and impacts emanating from environment, social and governance (ESG) factors 
           and their management entails a business’s commitment to improve their ESG risk management. 
           EGP provides advisory services to businesses in identifying ESG risks and management 
@@ -128,9 +128,9 @@ export const Services_risk = () => {
                   className="flex justify-between items-center cursor-pointer bg-transparent text-gray-700 border-b border-gray-300 py-2"
                   onClick={() => handleToggle(index)}
                 >
-                  <h2 className="text-2xl sm:text-2xl ">{category.title}</h2>
-                  <span className="text-xl sm:text-2xl">
-                    {activeIndex === index ? <FaMinus /> : <FaPlus />}
+                  <h2 className="text-xl sm:text-xl ">{category.title}</h2>
+                  <span className="text-xl sm:text-xl">
+                    {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
                 {activeIndex === index && (
