@@ -7,14 +7,14 @@ gsap.registerPlugin(ScrollTrigger); // Registered ScrollTrigger
 const sections = [
   {
     title: 'Mission',
-    content: 'Empower our talented teams to deliver top-notch solutions, prioritizing safety and efficiency while safeguarding the environments we operate in.',
-    imageUrl: 'sec1.jpg',
+    content: 'Our mission is to provide services to Clients to make them sustainable resilient and impact the lives of people in areas they operate.',
+    imageUrl: 'mission001.jpg',
     alt: 'Mission Image'
   },
   {
     title: 'Vision',
-    content: "Striving to be North America's premier service provider.",
-    imageUrl: 'sec2.jpg',
+    content: "Our vision is to create an organisation which foster the spirit of inclusion by celebrating diversity of ideas and bringing together talented professionals with similar outlook of impacting lives through innovative thought process.",
+    imageUrl: 'vision001.jpg',
     alt: 'Vision Image'
   }
 ];
@@ -48,7 +48,7 @@ const AboutUs1 = () => {
       <div className="w-full h-screen relative">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-            <source src="Market-manufacturing-video.mp4" type="video/mp4" />
+            <source src="about-image.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 
@@ -70,8 +70,8 @@ const AboutUs1 = () => {
  
       {/* Mission and Vision */}
       <div className="relative h-screen bg-white p-8">
-        <h2 className="text-3xl font-semi-bold text-left mt-14 ml-6 mb-8">OUR CORE PILLARS: MISSION, VISION, VALUES</h2>
-        <h3 className="text-xl font-semibold text-left ml-6 mb-14 text-[#00a7ff]">EMPOWERING SOLUTIONS, PRESERVING ENVIRONMENTS</h3>
+        <h2 className="text-3xl font-semi-bold text-left mt-14 ml-6 mb-8">OUR CORE PILLARS: MISSION, VISION</h2>
+        <h3 className="text-xl font-semibold text-left ml-6 mb-14 text-[#00a7ff]">International Experience, Local Deliverance!</h3>
         <div className="grid md:grid-cols-2 gap-8">
           {sections.map((section, index) => (
             <div
@@ -80,7 +80,7 @@ const AboutUs1 = () => {
               className="relative bg-cover bg-center text-white p-10 rounded-lg h-[90%] mb-16"
               style={{ backgroundImage: `url(${section.imageUrl})` }}
             >
-              <div className="absolute inset-0 bg-[#00a7ff] opacity-30 rounded-lg "></div>
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg "></div>
               <div className="relative z-10">
                 <h4 className="text-3xl font-semibold mb-6">{section.title}</h4>
                 <p className="text-lg">{section.content}</p>
