@@ -118,7 +118,7 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/career" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 CAREER
                             </NavLink>
                         </li>
@@ -200,7 +200,7 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/career" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 CAREER
                             </NavLink>
                         </li>

@@ -14,6 +14,8 @@ import ContactPage from './Components/ContactPage';
 import Home from './Components/Home';
 import AboutUs from "./Components/AboutUs";
 import Career from "./Components/Career"
+import Cta from './Components/Cta';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
         <Route path="/market-manufacturing" element={<Market_manufacturing />} />
         <Route path="/market-finance" element={<Market_finance />} />
         <Route path="/services-risk" element={<Services_risk />} />
-        <Route path="/career" element={<Career />} />
+        <Route path="/careers" element={<Career />} />
         <Route path="/services-mergers" element={<Services_mergers />} />
         <Route path="/services-ehs" element={<Services_ehs />} />
         <Route path="/services-social" element={<Services_social />} />
@@ -36,6 +38,8 @@ function App() {
           
         
       </Routes>
+      <Cta />
+      <Footer />
     </>
   );
 }
