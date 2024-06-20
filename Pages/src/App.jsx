@@ -1,42 +1,37 @@
+import { Routes, Route } from 'react-router-dom';
+import Header from './Components/Header';
+import Services_mergers from './Components/Services/Services_mergers';
+import Market_realestate from './Components/Market/Market_realestate';
 
-import './App.css'
-
-import Header from './Components/Header'
-// import Services_mergers from './Components/Services/Services_mergers';
-// import Market_realestate from './Components/Market/Market_realestate';
-// import Services from './Components/Services'
-// import Extra from './Components/Extra'
-// import Market_manufacturing from "./Components/Market/Market_manufacturing"
-
-// import Market_finance from "./Components/Market/Market_finance";
-// import Services_risk from './Components/Services/Services_risk';
-import Services_social from "./Components/Services/Services_social"
-// import Services_ehs from './Components/Services/Services_ehs';
-
+import Market_manufacturing from './Components/Market/Market_manufacturing';
+import Market_finance from './Components/Market/Market_finance';
+import Services_risk from './Components/Services/Services_risk';
+import Services_social from './Components/Services/Services_social';
+import Services_ehs from './Components/Services/Services_ehs';
+import Marc from './Components/Marc';
+import './App.css';
+import ContactPage from './Components/ContactPage';
+import Home from './Components/Home';
 
 function App() {
-  
-
   return (
     <>
-       {/* <Header />
-      <Services />
-      <Extra /> */}
-      
- 
       <Header />
-      {/* <Market_realestate /> */}
-      {/* <Market_manufacturing /> */}
-      {/* <Market_finance /> */}
-  
-      {/* <Services_risk /> */}
-      {/* <Services_mergers /> */}
-      {/* <Services_ehs /> */}
-      <Services_social />
-      </>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/market-real-estate" element={<Market_realestate />} />
+        <Route path="/market-manufacturing" element={<Market_manufacturing />} />
+        <Route path="/market-finance" element={<Market_finance />} />
+        <Route path="/services-risk" element={<Services_risk />} />
+
+        <Route path="/services-mergers" element={<Services_mergers />} />
+        <Route path="/services-ehs" element={<Services_ehs />} />
+        <Route path="/services-social" element={<Services_social />} />
+        <Route path="/market" element={<Marc />} />
+        <Route path="/contact-page" element={<ContactPage />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
-
-

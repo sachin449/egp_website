@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -36,15 +37,13 @@ const Header = () => {
         <header className={`fixed top-0 left-0 z-30 w-full transition-transform duration-1000 ${showHeader ? 'translate-y-0' : '-translate-y-full'} ${isAtTop ? 'bg-transparent' : 'bg-gray-800'}`}>
             <div className="container mx-auto flex items-center justify-between px-5 py-3">
                 <div className="flex items-center space-x-3">
-                    <img src="egplogo.png" alt="Logo" className="h-[60px]" />
+                    <NavLink to="/">
+                        <img src="egplogo.png" alt="Logo" className="h-[60px]" />
+                    </NavLink>
                 </div>
                 <nav className="hidden md:flex">
                     <ul className="flex items-center space-x-8">
-                        <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                ABOUT US
-                            </a>
-                        </li>
+                        
                         <li className="relative">
                             <button
                                 className="text-white text-lg leading-none py-2 hover:text-gray-300"
@@ -61,16 +60,16 @@ const Header = () => {
                                 >
                                     <ul className="py-2 text-white">
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/solution1">ESG Risk Advisory</a>
+                                            <NavLink to="/services-risk">ESG Risk Advisory</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/solution2">Mergers & Acquisitions</a>
+                                            <NavLink to="/services-mergers">Mergers & Acquisitions</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/solution3">EHS & Social Advisory</a>
+                                            <NavLink to="/services-ehs">EHS & Social Advisory</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/solution4">Social Impact</a>
+                                            <NavLink to="/services-social">Social Impact</NavLink>
                                         </li>
                                     </ul>
                                 </div>
@@ -92,36 +91,41 @@ const Header = () => {
                                 >
                                     <ul className="py-2 text-white">
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource1">Manufacturing</a>
+                                            <NavLink to="/market-manufacturing">Manufacturing</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource2">Agri-business & Forestry</a>
+                                            <NavLink to="/market-real-estate">Infrastructure & Real Estate</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource3">Retail & Hospitality</a>
+                                            <NavLink to="/market-finance">Financial Institution & Funds</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource4">Health & Education</a>
-                                        </li>
-                                        <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource5">Infrastructure & Real Estate</a>
-                                        </li>
-                                        <li className="px-4 py-2 hover:bg-gray-700">
-                                            <a href="/resource6">Financial Institutions & Funds</a>
-                                        </li>
+                                        <NavLink href="/">Agri-business & Forestry</NavLink>
+                                    </li>
+                                    <li className="px-4 py-2 hover:bg-gray-700">
+                                        <NavLink href="/">Retail & Hospitality</NavLink>
+                                    </li>
+                                    <li className="px-4 py-2 hover:bg-gray-700">
+                                        <NavLink href="/">Health & Education</NavLink>
+                                    </li>
                                     </ul>
                                 </div>
                             )}
                         </li>
                         <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                CAREERS
-                            </a>
+                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                ABOUT US
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                CAREERS
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
                                 CONTACT US
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
@@ -134,11 +138,7 @@ const Header = () => {
             {menuOpen && (
                 <div className="md:hidden bg-gray-800 bg-opacity-90">
                     <ul className="flex flex-col items-center space-y-4 py-5">
-                        <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                ABOUT US
-                            </a>
-                        </li>
+                        
                         <li>
                             <button
                                 className="text-white text-lg leading-none py-2 hover:text-gray-300"
@@ -149,16 +149,16 @@ const Header = () => {
                             {solutionsOpen && (
                                 <ul className="py-2 text-white">
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/solution1">ESG Risk Advisory</a>
+                                        <NavLink to="/services-risk">ESG Risk Advisory</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/solution2">Mergers & Acquisitions</a>
+                                        <NavLink to="/services-mergers">Mergers & Acquisitions</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/solution3">EHS & Social Advisory</a>
+                                        <NavLink to="/services-ehs">EHS & Social Advisory</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/solution4">Social Impact</a>
+                                        <NavLink to="/services-social">Social Impact</NavLink>
                                     </li>
                                 </ul>
                             )}
@@ -173,35 +173,41 @@ const Header = () => {
                             {resourcesOpen && (
                                 <ul className="py-2 text-white">
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource1">Manufacturing</a>
+                                        <NavLink to="/market-manufacturing">Manufacturing</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource2">Agri-business & Forestry</a>
+                                        <NavLink to="/market-real-estate">Infrastructure & Real Estate</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource3">Retail & Hospitality</a>
+                                        <NavLink to="/market-finance">Financial Institution & Funds</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource4">Health & Education</a>
+                                        <NavLink href="/">Agri-business & Forestry</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource5">Infrastructure & Real Estate</a>
+                                        <NavLink href="/">Retail & Hospitality</NavLink>
                                     </li>
                                     <li className="px-4 py-2 hover:bg-gray-700">
-                                        <a href="/resource6">Financial Institutions & Funds</a>
+                                        <NavLink href="/">Health & Education</NavLink>
                                     </li>
+                                    
                                 </ul>
                             )}
                         </li>
                         <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                CAREERS
-                            </a>
+                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                ABOUT US
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                CAREERS
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
                                 CONTACT US
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const services = [
   {
@@ -6,28 +7,28 @@ const services = [
     backgroundImage: 'url(sec8.jpg)',
     heading: 'ESG Risk Advisory',
     subheading: 'The risks and impacts emanating from environment, social and governance...',
-    link: '/page1',
+    link: '/services-risk',
   },
   {
     id: 2,
     backgroundImage: 'url(sec7.jpg)',
     heading: 'Merger & Acquisition',
     subheading: 'EGP offers services to Clients in Mergers & Acquisitions (M&A) through ...',
-    link: '/page2',
+    link: '/services-mergers',
   },
   {
     id: 3,
     backgroundImage: 'url(sec6.jpg)',
     heading: 'EHS & Social Advisory',
     subheading: "EGP provides advisory services to identify, measure and manage the ESG ...",
-    link: '/page3',
+    link: '/services-ehs',
   },
   {
     id: 4,
     backgroundImage: 'url(sec9.jpg)',
     heading: 'Social Impact',
     subheading: 'With growing economies around the world and ever-changing business needs...',
-    link: '/page4',
+    link: '/services-social',
   },
 ];
 
@@ -59,12 +60,7 @@ const Services = () => {
               <p className={`  absolute  w-64  text-lg sm:text-base transition-opacity duration-700 ease-in-out ${hoveredService === index ? 'opacity-100' : 'opacity-0'}`}>
                 {service.subheading}
               </p>
-              <button
-                className="py-2 px-4 rounded mt-4 transition duration-500 ease-in-out relative overflow-hidden text-white bg-transparent border-none flex items-center"
-                onClick={() => {
-                  window.location.href = service.link;
-                }}
-              >
+              <NavLink to={service.link} className="py-2 px-4 rounded mt-4 transition duration-500 ease-in-out relative overflow-hidden text-white bg-transparent border-none flex items-center">
                 <span
                   className={` mt-5 relative transition-all duration-1000 ease-in-out ${hoveredService === index ? 'opacity-100 translate-x-[-10px]' : 'opacity-0 translate-x-2'}`}
                 >
@@ -75,7 +71,7 @@ const Services = () => {
                 >
                   →
                 </span>
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>
