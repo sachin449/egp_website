@@ -12,6 +12,9 @@ import Marc from './Components/Marc';
 import './App.css';
 import ContactPage from './Components/ContactPage';
 import Home from './Components/Home';
+import AboutUs from "./Components/AboutUs";
+import Career from "./Components/Career"
+
 
 function App() {
   return (
@@ -23,12 +26,15 @@ function App() {
         <Route path="/market-manufacturing" element={<Market_manufacturing />} />
         <Route path="/market-finance" element={<Market_finance />} />
         <Route path="/services-risk" element={<Services_risk />} />
-
+        <Route path="/career" element={<Career />} />
         <Route path="/services-mergers" element={<Services_mergers />} />
         <Route path="/services-ehs" element={<Services_ehs />} />
         <Route path="/services-social" element={<Services_social />} />
         <Route path="/market" element={<Marc />} />
         <Route path="/contact-page" element={<ContactPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
+          
+        
       </Routes>
     </>
   );

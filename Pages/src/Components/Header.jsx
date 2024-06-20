@@ -44,7 +44,7 @@ const Header = () => {
                 <nav className="hidden md:flex">
                     <ul className="flex items-center space-x-8">
                         <li>
-                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/about-us" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 ABOUT US
                             </NavLink>
                         </li>
@@ -118,8 +118,8 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                CAREERS
+                            <NavLink to="/career" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                CAREER
                             </NavLink>
                         </li>
                         <li>
@@ -139,7 +139,7 @@ const Header = () => {
                 <div className="md:hidden bg-gray-800 bg-opacity-90">
                     <ul className="flex flex-col items-center space-y-4 py-5">
                         <li>
-                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/about-us" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 ABOUT US
                             </NavLink>
                         </li>
@@ -200,8 +200,8 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                CAREERS
+                            <NavLink to="/career" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                CAREER
                             </NavLink>
                         </li>
                         <li>
