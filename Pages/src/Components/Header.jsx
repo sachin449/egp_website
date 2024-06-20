@@ -43,7 +43,11 @@ const Header = () => {
                 </div>
                 <nav className="hidden md:flex">
                     <ul className="flex items-center space-x-8">
-                        
+                        <li>
+                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                ABOUT US
+                            </NavLink>
+                        </li>
                         <li className="relative">
                             <button
                                 className="text-white text-lg leading-none py-2 hover:text-gray-300"
@@ -112,11 +116,7 @@ const Header = () => {
                                 </div>
                             )}
                         </li>
-                        <li>
-                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                ABOUT US
-                            </NavLink>
-                        </li>
+                        
                         <li>
                             <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 CAREERS
@@ -138,7 +138,11 @@ const Header = () => {
             {menuOpen && (
                 <div className="md:hidden bg-gray-800 bg-opacity-90">
                     <ul className="flex flex-col items-center space-y-4 py-5">
-                        
+                        <li>
+                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                                ABOUT US
+                            </NavLink>
+                        </li>
                         <li>
                             <button
                                 className="text-white text-lg leading-none py-2 hover:text-gray-300"
@@ -194,11 +198,7 @@ const Header = () => {
                                 </ul>
                             )}
                         </li>
-                        <li>
-                            <NavLink to="/" className="text-white text-lg leading-none py-2 hover:text-gray-300">
-                                ABOUT US
-                            </NavLink>
-                        </li>
+                        
                         <li>
                             <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
                                 CAREERS
