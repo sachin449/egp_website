@@ -8,4 +8,4 @@ function Extra() {
   )
 }
 
-export default Extra
+export default Extra;
