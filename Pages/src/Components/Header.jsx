@@ -119,7 +119,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-blue-500">
+                            <a href="#" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
                                 CONTACT US
                             </a>
                         </li>
