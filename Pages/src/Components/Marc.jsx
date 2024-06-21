@@ -97,7 +97,7 @@ const Marc = () => {
     }, []);
  
     return (
-        <div className="h-screen relative flex mb-16">
+        <div className="h-screen relative flex mb-18">
             {/* Main Heading */}
             <div className="absolute top-10 left-4 ml-14 text-4xl font-bold text-gray-800 z-20">
                 Market

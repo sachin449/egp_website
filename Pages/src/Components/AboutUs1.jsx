@@ -80,7 +80,7 @@ const AboutUs1 = () => {
               className="relative bg-cover bg-center text-white p-10 rounded-lg h-[90%] mb-16"
               style={{ backgroundImage: `url(${section.imageUrl})` }}
             >
-              <div className="absolute inset-0 bg-[#00b0f0] opacity-40 rounded-lg "></div>
+              <div className="absolute inset-0 bg-[#181818] opacity-40 rounded-lg "></div>
               <div className="relative z-10">
                 <h4 className="text-3xl font-semibold mb-6">{section.title}</h4>
                 <p className="text-lg">{section.content}</p>

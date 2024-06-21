@@ -89,7 +89,7 @@ const AboutUs2 = () => {
                 <h2 className="subheading text-lg mt-20 mb-10 mr-10 text-balance">
                   {section.subheading}
                 </h2>
-                <h1 className="heading text-4xl mb-16 mr-20 text-balance">
+                <h1 className="heading text-4xl mb-10 mr-20 text-balance">
                   {section.heading}
                 </h1>
                 <p className="paragraph text-lg mr-20 font-normal text-balance">
