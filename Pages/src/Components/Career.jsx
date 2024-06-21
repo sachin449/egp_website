@@ -166,7 +166,7 @@ const Career = () => {
             </ul>
             <h3 className="text-2xl font-semibold mt-4">How to Apply</h3>
             <p className="text-lg mb-4">{jobDetail.apply}</p>
-            <button className="mt-2 px-4 py-2 bg-gradient-to-r from-green-400 to-green-600 hover:from-green-600 hover:to-green-800 text-white rounded-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
+            <button className="mt-2 px-4 py-2 bg-gradient-to-r from-[#00b0f0] to-[#12556d] hover:from-[#00b0f0] hover:to-[#174b67] text-white rounded-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
               Apply Now
             </button>
           </div>

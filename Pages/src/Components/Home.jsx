@@ -2,7 +2,7 @@
 import Services from './Services';
 import Extra from './Extra';
 import Marc from './Marc';
-
+import Map from './Map';
 import HeroMain from './HeroMain';
 
 const Home = () => {
@@ -14,6 +14,8 @@ const Home = () => {
       <Marc />
       <Extra />
       <Services />
+      <Extra />
+      <Map />
       
     </div>
   );

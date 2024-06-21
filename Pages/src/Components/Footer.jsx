@@ -97,22 +97,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Achievements */}
-        <div className="flex flex-col mb-3 w-full sm:w-auto">
-          <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
-            Achievements
-          </h5>
-          <ul>
-            {Markets.map((market, index) => (
-              <li
-                key={index}
-                className="transition duration-300 ease-in-out transform hover:text-white hover:translate-x-1"
-              >
-                <NavLink to={market.link}>{market.name}</NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
+      
 
         {/* Quick Links */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">

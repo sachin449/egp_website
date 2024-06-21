@@ -42,7 +42,7 @@ const Services = () => {
   return (
     <div className="relative flex w-full h-screen">
       {/* "Our Services" Heading */}
-      <div className="absolute top-10 left-10 z-20 text-white text-6xl ">
+      <div className="absolute top-16 left-10 z-20 text-white text-6xl ">
         Our Services
       </div>
 
@@ -64,7 +64,7 @@ const Services = () => {
           onMouseEnter={() => setHoveredService(index)}
           onMouseLeave={() => setHoveredService(0)}
         >
-          <div className="relative flex flex-col items-center justify-end w-full h-full p-4 text-white bg-black bg-opacity-10 hover:bg-opacity-30 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 ">
+          <div className="relative flex flex-col items-start justify-end w-full h-full p-4 text-white bg-black bg-opacity-10 hover:bg-opacity-30 border-2 border-transparent transition duration-500 ease-in-out border-s-gray-900 ">
             <div className=" relative flex flex-col items-start transition-all duration-1000 ease-in-out">
               <h2
                 className={` text-balance text-2xl sm:text-2xl md:text-3xl transition-all duration-700 ease-in-out ${
