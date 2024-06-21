@@ -16,7 +16,7 @@ const Home = () => {
       <Services />
       <Extra />
       <Map />
-      
+      <Extra />
     </div>
   );
 };
