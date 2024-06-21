@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FaPlus, FaMinus } from 'react-icons/fa';
+
 
  const Services_mergers = () => {
 
@@ -31,29 +31,32 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
   };
 
   return (
-    <div className="w-full h-screen relative">
-      {/* Video Background */}
-      <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-        <source src="Services-merger-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className='relative w-full'>
+      <div className="w-full h-screen relative overflow-hidden">
+        {/* Video Background */}
+        <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
+          <source src="Services-merger-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
 
-      {/* Heading and Subheading */}
-      <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
-        <div className="mb-20">
-          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">MERGERS & ACQUISITIONS</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-          EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages
-           of investment lifecycle. By providing experienced advisory services EGP supports 
-           the Client on target businesses which may be pertinent to making a well-informed M&A decision.
-          </h2>
+        {/* Heading and Subheading */}
+        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+          <div className="container mx-auto flex flex-col justify-end h-full">
+            <div className="mb-20">
+              <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">MERGERS & ACQUISITIONS</h1>
+              <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+              EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages
+              of investment lifecycle. By providing experienced advisory services EGP supports 
+              the Client on target businesses which may be pertinent to making a well-informed M&A decision.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
-
-
+      
 
       
        {/* New Section: Case Showcase */}

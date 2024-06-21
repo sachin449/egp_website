@@ -5,27 +5,23 @@ const Footer = () => {
   const quickLinks = ['Reviews', 'Terms & Condition', 'Disclaimer', 'Site Map'];
  
   return (
-    <footer className="bg-black text-gray-400 p-10 inset-x-0 bottom-0 h-[50vh]">
+    <footer className="bg-black text-gray-400 p-10 inset-x-0 bottom-0 h-[45vh]">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start h-full">
         {/* Sustainatrix Section */}
         <div className="flex flex-col">
-          <div className="flex items-center mb-3 w-full md:w-auto">
-            <img src="logo222.png" alt="Sustainatrix Logo" className="w-16 h-16 mr-4"/>
-            <h5 className="text-white text-3xl font-bold ">
-              ESG Global Partners
-            </h5>
+          <div className=" items-center mb-3 w-full md:w-auto">
+            <img src="egplogo.png" alt="Sustainatrix Logo" className="w-30 h-16 mt-4 mr-4"/>
+            
           </div>
           {/* Social Media Logos */}
-          <div className="flex space-x-10 mt-12 ml-4">
+          <div className="flex space-x-10 mt-8 ml-16">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
               <FaTwitter size={24} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
               <FaYoutube size={24} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
-              <FaFacebook size={24} />
-            </a>
+            
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
               <FaGithub size={24} />
             </a>
@@ -34,7 +30,7 @@ const Footer = () => {
  
         {/* Industries Section */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">
-          <h5 className="text-white font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
+          <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Industries
           </h5>
           <ul>
@@ -51,7 +47,7 @@ const Footer = () => {
  
         {/* Our Services */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">
-          <h5 className="text-white font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
+          <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Our Services
           </h5>
           <ul>
@@ -68,7 +64,7 @@ const Footer = () => {
  
         {/* Our Achievements */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">
-          <h5 className="text-white font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
+          <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Achievements
           </h5>
           <ul>
@@ -85,7 +81,7 @@ const Footer = () => {
  
         {/* Quick Links */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">
-          <h5 className="text-white font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
+          <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Quick Links
           </h5>
           <ul>

@@ -16,12 +16,14 @@ import AboutUs from "./Components/AboutUs";
 import Career from "./Components/Career"
 import Cta from './Components/Cta';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 function App() {
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market-real-estate" element={<Market_realestate />} />

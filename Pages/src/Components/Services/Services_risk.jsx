@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FaPlus, FaMinus } from 'react-icons/fa';
+
 
 export const Services_risk = () => {
 
@@ -91,29 +91,32 @@ export const Services_risk = () => {
   };
 
   return (
-    <div className="w-full h-screen relative">
-      {/* Video Background */}
-      <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-        <source src="Services-risk-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className='relative w-full'>
+      <div className="w-full h-screen relative overflow-hidden">
+        {/* Video Background */}
+        <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
+          <source src="Services-risk-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
 
-      {/* Heading and Subheading */}
-      <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
-        <div className="mb-20">
-          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">ESG RISK ADVISORY</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-          The risks and impacts emanating from environment, social and governance (ESG) factors 
-          and their management entails a business’s commitment to improve their ESG risk management. 
-          EGP provides advisory services to businesses in identifying ESG risks and management 
-          measures to enhance their ESG performance.
-          </h2>
+        {/* Heading and Subheading */}
+        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+          <div className="container mx-auto flex flex-col justify-end h-full">  
+            <div className="mb-20">
+              <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">ESG RISK ADVISORY</h1>
+              <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+              The risks and impacts emanating from environment, social and governance (ESG) factors 
+              and their management entails a business’s commitment to improve their ESG risk management. 
+              EGP provides advisory services to businesses in identifying ESG risks and management 
+              measures to enhance their ESG performance.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
-
 
 
       

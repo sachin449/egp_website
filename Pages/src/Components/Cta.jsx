@@ -19,7 +19,7 @@ const Cta = () => {
       </div>
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
         <NavLink to="/contact-page">
-          <button className="bg-[#474b2e] text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform hover:bg-[#595f33] hover:scale-105">
+          <button className="bg-[#00a7ff] text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform  hover:scale-105">
             Get Involved Today
           </button>
         </NavLink>

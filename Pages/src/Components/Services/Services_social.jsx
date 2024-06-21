@@ -55,36 +55,42 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
   };
 
   return (
-    <div className="w-full h-screen relative">
-      {/* Video Background */}
-      <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-        <source src="Services-social-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    
+      <div className='relative w-full'>
+      <div className="w-full h-screen relative overflow-hidden">
+        {/* Video Background */}
+        <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
+          <source src="Services-social-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
 
-      {/* Heading and Subheading */}
-      <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
-        <div className="mb-20">
-          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">SOCIAL IMPACT</h1>
-          <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-            With growing economies around the world and ever-changing business needs, 
-            managing social risks and impacts has become an absolute necessity. Right
-             community engagement processes, and addressing community needs, help obtain
-              social license to operate, supporting businesses in overall operational excellence.
-          </h2>
+        {/* Heading and Subheading */}
+        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+          <div className="container mx-auto flex flex-col justify-end h-full">  
+            <div className="mb-20">
+              <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">SOCIAL IMPACT</h1>
+              <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+                With growing economies around the world and ever-changing business needs, 
+                managing social risks and impacts has become an absolute necessity. Right
+                community engagement processes, and addressing community needs, help obtain
+                social license to operate, supporting businesses in overall operational excellence.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
+
 
 
 
       
       
       {/* New Section: Case Showcase */}
-      <div className=" bg-gray-100 px-20 py-16">
-        <div className="container mx-20 px-">
+      <div className=" bg-gray-100  py-16">
+        <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00a7ff] mb-12">Our Areas Of Expertise</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
             {categories.map((category, index) => (

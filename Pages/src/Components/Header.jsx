@@ -44,13 +44,13 @@ const Header = () => {
                 <nav className="hidden md:flex">
                     <ul className="flex items-center space-x-8">
                         <li>
-                            <NavLink to="/about-us" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/about-us" className="text-white text-lg leading-none py-1 hover:text-gray-300">
                                 ABOUT US
                             </NavLink>
                         </li>
                         <li className="relative">
                             <button
-                                className="text-white text-lg leading-none py-2 hover:text-gray-300"
+                                className="text-white text-lg leading-none py-1 hover:text-gray-300"
                                 onMouseEnter={() => setSolutionsOpen(true)}
                                 onMouseLeave={() => setSolutionsOpen(false)}
                             >
@@ -81,7 +81,7 @@ const Header = () => {
                         </li>
                         <li className="relative">
                             <button
-                                className="text-white text-lg leading-none py-2 hover:text-gray-300"
+                                className="text-white text-lg leading-none py-1 hover:text-gray-300"
                                 onMouseEnter={() => setResourcesOpen(true)}
                                 onMouseLeave={() => setResourcesOpen(false)}
                             >
@@ -118,7 +118,7 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-1 hover:text-gray-300">
                                 CAREER
                             </NavLink>
                         </li>
@@ -139,13 +139,13 @@ const Header = () => {
                 <div className="md:hidden bg-gray-800 bg-opacity-90">
                     <ul className="flex flex-col items-center space-y-4 py-5">
                         <li>
-                            <NavLink to="/about-us" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/about-us" className="text-white text-lg leading-none py-1 hover:text-gray-300">
                                 ABOUT US
                             </NavLink>
                         </li>
                         <li>
                             <button
-                                className="text-white text-lg leading-none py-2 hover:text-gray-300"
+                                className="text-white text-lg leading-none py-1 hover:text-gray-300"
                                 onClick={() => setSolutionsOpen(!solutionsOpen)}
                             >
                                 SERVICES
@@ -169,7 +169,7 @@ const Header = () => {
                         </li>
                         <li>
                             <button
-                                className="text-white text-lg leading-none py-2 hover:text-gray-300"
+                                className="text-white text-lg leading-none py-1 hover:text-gray-300"
                                 onClick={() => setResourcesOpen(!resourcesOpen)}
                             >
                                 MARKETS
@@ -200,7 +200,7 @@ const Header = () => {
                         </li>
                         
                         <li>
-                            <NavLink to="/careers" className="text-white text-lg leading-none py-2 hover:text-gray-300">
+                            <NavLink to="/careers" className="text-white text-lg leading-none py-1 hover:text-gray-300">
                                 CAREER
                             </NavLink>
                         </li>

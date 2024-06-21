@@ -49,23 +49,29 @@ export const Market_finance = () => {
 
 
   return (
-    <div className="w-full h-screen relative">
-      {/* Video Background */}
-      <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-        <source src="Market-finance-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className='relative w-full'>
+      <div className="w-full h-screen relative overflow-hidden">
+        {/* Video Background */}
+        <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
+          <source src="Market-finance-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
 
-      {/* Heading and Subheading */}
-      <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
-        <div className="mb-20">
-          <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Financial Institution And Funds</h1>
-          <h2 className="w-[800px] text-lg sm:text-lg md:text-xl md:text-medium-bold">
-            We have been providing services to Client in sectors of Infrastructure & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality, Financial Institution & Funds and Health & Education.
-          </h2>
+        {/* Heading and Subheading */}
+        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+          <div className="container mx-auto flex flex-col justify-end h-full">  
+            <div className="mb-20">
+              <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Financial Institution And Funds</h1>
+              <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+               We have been providing services to Client in sectors of Infrastructure
+               & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
+              Financial Institution & Funds and Health & Education.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -92,13 +98,12 @@ export const Market_finance = () => {
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-blue-600 mb-12">How we can help?</h1>
           <div className="mb-12">
-          <p className="text-lg sm:text-xl px-20 text-gray-700 mb-6">
-            The Financial Reinvention framework can help your organization effect a fundamental change in its performance to support revenue growth, become more cost-efficient, minimize risk, and improve operational resilience.
-        </p>
-<p className="text-lg sm:text-xl px-20 text-gray-700">
-  We have reinvented financial operations with agile, profitable, technology-enabled structures we call financial response networks (FRNs). FRNs alter the traditional, sequential approach to financial planning and analysis to a dynamic, integrated model that uses complex financial analytics solutions to drive significant improvements.
-</p>
-
+            <p className="text-lg sm:text-xl px-20 text-gray-700 mb-6">
+              The Financial Reinvention framework can help your organization effect a fundamental change in its performance to support revenue growth, become more cost-efficient, minimize risk, and improve operational resilience.
+            </p>
+            <p className="text-lg sm:text-xl px-20 text-gray-700">
+              We have reinvented financial operations with agile, profitable, technology-enabled structures we call financial response networks (FRNs). FRNs alter the traditional, sequential approach to financial planning and analysis to a dynamic, integrated model that uses complex financial analytics solutions to drive significant improvements.
+            </p>
           </div>
           {helpSections.map((help, index) => (
             <div key={index} className="mb-4 px-20">
