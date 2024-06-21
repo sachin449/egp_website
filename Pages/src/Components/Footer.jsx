@@ -1,29 +1,28 @@
-import { FaTwitter, FaYoutube, FaFacebook, FaGithub } from 'react-icons/fa';
+import { FaYoutube, FaLinkedin } from 'react-icons/fa';
  
 const Footer = () => {
-  const industries = ['Healthcare', 'Sports', 'Ecommerce', 'Construction', 'Club'];
-  const quickLinks = ['Reviews', 'Terms & Condition', 'Disclaimer', 'Site Map'];
+  const Markets = ['Healthcare', 'Sports', 'Ecommerce', 'Construction', 'Club'];
+  const Services = ['Reviews', 'Terms & Condition', 'Disclaimer', 'Site Map'];
+  const QuickLinks = ['About Us', 'Contact US', 'Careers'];
  
   return (
-    <footer className="bg-black text-gray-400 p-10 inset-x-0 bottom-0 h-[45vh]">
+    <footer className="bg-black text-gray-400 p-10 inset-x-0 bottom-0 h-[50vh]">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start h-full">
         {/* Sustainatrix Section */}
         <div className="flex flex-col">
-          <div className=" items-center mb-3 w-full md:w-auto">
+          <div className="items-center mb-3 w-full md:w-auto">
             <img src="egplogo.png" alt="Sustainatrix Logo" className="w-30 h-16 mt-4 mr-4"/>
-            
           </div>
           {/* Social Media Logos */}
           <div className="flex space-x-10 mt-8 ml-16">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
-              <FaTwitter size={24} />
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out" >
+              <img src="twitter.png" alt="X Logo" width={24} height={24} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
               <FaYoutube size={24} />
             </a>
-            
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
-              <FaGithub size={24} />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+              <FaLinkedin size={24} />
             </a>
           </div>
         </div>
@@ -31,10 +30,10 @@ const Footer = () => {
         {/* Industries Section */}
         <div className="flex flex-col mb-3 w-full sm:w-auto">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
-            Industries
+            Markets
           </h5>
           <ul>
-            {industries.map((industry, index) => (
+            {Markets.map((industry, index) => (
               <li
                 key={index}
                 className="transition duration-300 ease-in-out transform hover:text-white hover:translate-x-1"
@@ -51,7 +50,7 @@ const Footer = () => {
             Our Services
           </h5>
           <ul>
-            {industries.map((industry, index) => (
+            {Services.map((industry, index) => (
               <li
                 key={index}
                 className="transition duration-300 ease-in-out transform hover:text-white hover:translate-x-1"
@@ -68,7 +67,7 @@ const Footer = () => {
             Achievements
           </h5>
           <ul>
-            {industries.map((industry, index) => (
+            {Markets.map((industry, index) => (
               <li
                 key={index}
                 className="transition duration-300 ease-in-out transform hover:text-white hover:translate-x-1"
@@ -85,7 +84,7 @@ const Footer = () => {
             Quick Links
           </h5>
           <ul>
-            {quickLinks.map((link, index) => (
+            {QuickLinks.map((link, index) => (
               <li
                 key={index}
                 className="transition duration-300 ease-in-out transform hover:text-white hover:translate-x-1"
@@ -97,7 +96,7 @@ const Footer = () => {
         </div>
       </div>
  
-      <div className="text-center bg-black text-gray-300 text-xs  w-full">
+      <div className="text-center bg-black text-gray-300 text-xs w-full">
         © All Rights Reserved 2021-2024<br/>
         esggp.org
       </div>
@@ -106,3 +105,4 @@ const Footer = () => {
 };
  
 export default Footer;
+ 

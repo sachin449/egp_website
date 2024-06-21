@@ -100,7 +100,7 @@ export const Services_risk = () => {
         </video>
 
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
         {/* Heading and Subheading */}
         <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">

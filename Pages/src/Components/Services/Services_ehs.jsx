@@ -55,7 +55,7 @@ const Services_ehs = () => {
           <source src="Services-ehs-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
         {/* Heading and Subheading */}
         <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">

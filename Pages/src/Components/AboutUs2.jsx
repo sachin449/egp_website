@@ -1,8 +1,6 @@
-
- 
 import "../App.css";
 import { useRef, useEffect, useState } from "react";
- 
+
 const AboutUs2 = () => {
   const textSections = [
     {
@@ -18,7 +16,7 @@ const AboutUs2 = () => {
       heading: "SUSTAINABILITY",
       subheading: "Sustainability and the future",
       paragraph:
-        "Recycling plays a crucial role in managing waste and preserving natural resources. It helps reduce pollution and conserves materials that can be reused in new products.Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionopulation is ex",
+        "At EGP, we are committed to the ethos of sustainability and attempt to embed the same in all our practices & solutions we offer. We intend to address challenges by providing sustainable solutions which would have a positive impact to environment and communities. ",
       diffsection: "Learn More",
     },
     {
@@ -26,11 +24,11 @@ const AboutUs2 = () => {
       heading: "OUR PEOPLES",
       subheading: "Modern solutions",
       paragraph:
-        "Innovation in waste management includes new technologies and practices that aim to reduce waste and increase efficiency in waste handling and recycling processes.Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionpopulation is ex",
+        "Our team comprises of inhouse Senior ESG Professionals, Environmental Scientists, Engineers, Social Scientists, Ecologists, Project Managers, etc. who have 10+ years of experience in various thematic areas. Our people are at the heart of our business, and we are committed to develop an organisation where people ar their best, feel valued, and are safe. Our experts bring 30+ years of collective industry, leadership and technical experience in 41+ countries!",
       diffsection: "Learn More",
     },
   ];
- 
+
   const imageSections = [
     {
       src: "sec1.jpg",
@@ -45,15 +43,15 @@ const AboutUs2 = () => {
       alt: "Building 3",
     },
   ];
- 
+
   const textScrollRef = useRef(null);
   const imageScrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
- 
+
   const scrollCarousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % textSections.length);
   };
- 
+
   const handleManualScroll = (direction) => {
     if (direction === "left") {
       setCurrentIndex(
@@ -64,17 +62,17 @@ const AboutUs2 = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % textSections.length);
     }
   };
- 
+
   useEffect(() => {
-    const interval = setInterval(scrollCarousel, 3000);
+    const interval = setInterval(scrollCarousel, 4000);
     return () => clearInterval(interval);
   }, []);
- 
+
   return (
     <div className="h-screen relative flex mb-16">
       {/* Text Carousel */}
       <div
-        className="text-background-container absolute w-[42%] ml-10 h-screen bg-gray-300  z-10 overflow-hidden mt-10 mb-10"
+        className="text-background-container absolute w-[42%] ml-10 h-screen bg-gray-300 z-10 overflow-hidden mt-10 mb-10"
         ref={textScrollRef}
       >
         <div
@@ -86,7 +84,8 @@ const AboutUs2 = () => {
         >
           {textSections.map((section) => (
             <div key={section.id} className="w-full h-full flex-shrink-0">
-              <div className="p-8 bg-transparent z-10 flex-shrink-0">
+              <div className="p-6 bg-transparent z-10 flex-shrink-0 h-full relative">
+                {/* Text Section Content */}
                 <h2 className="subheading text-lg mt-20 mb-10 mr-10 text-balance">
                   {section.subheading}
                 </h2>
@@ -96,15 +95,18 @@ const AboutUs2 = () => {
                 <p className="paragraph text-lg mr-20 font-normal text-balance">
                   {section.paragraph}
                 </p>
-                <h1 className="mt-8 text-blue-600 text-highlight transition duration-300 ease-in-out transform hover:text-black hover:translate-x-1">
+                {/* Learn More Button positioned absolutely */}
+                <button
+                  className="absolute left-10 bottom-10 text-blue-600 text-highlight transition duration-300 ease-in-out transform hover:text-black hover:translate-x-1"
+                >
                   {section.diffsection}
-                </h1>
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
- 
+
       {/* Image Carousel */}
       <div
         className="image-container absolute top-1/4 right-[100px] w-[54%] h-[70vh] bg-white z-20 overflow-hidden"
@@ -132,7 +134,7 @@ const AboutUs2 = () => {
           ))}
         </div>
       </div>
- 
+
       {/* Arrow Buttons */}
       <div className="absolute bottom-4 right-[30%] flex space-x-4">
         <button
@@ -177,5 +179,5 @@ const AboutUs2 = () => {
     </div>
   );
 };
- 
+
 export default AboutUs2;

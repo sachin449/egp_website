@@ -53,7 +53,7 @@ const AboutUs1 = () => {
         </video>
 
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
         {/* Heading and Subheading */}
         <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
@@ -71,7 +71,7 @@ const AboutUs1 = () => {
       {/* Mission and Vision */}
       <div className="relative h-screen bg-white p-8">
         <h2 className="text-3xl font-semi-bold text-left mt-14 ml-6 mb-8">OUR CORE PILLARS: MISSION, VISION</h2>
-        <h3 className="text-xl font-semibold text-left ml-6 mb-14 text-[#00a7ff]">International Experience, Local Deliverance!</h3>
+        <h3 className="text-xl font-semibold text-left ml-6 mb-14 text-[#00b0f0]">International Experience, Local Deliverance!</h3>
         <div className="grid md:grid-cols-2 gap-8">
           {sections.map((section, index) => (
             <div
@@ -80,7 +80,7 @@ const AboutUs1 = () => {
               className="relative bg-cover bg-center text-white p-10 rounded-lg h-[90%] mb-16"
               style={{ backgroundImage: `url(${section.imageUrl})` }}
             >
-              <div className="absolute inset-0 bg-black opacity-35 rounded-lg "></div>
+              <div className="absolute inset-0 bg-[#00b0f0] opacity-40 rounded-lg "></div>
               <div className="relative z-10">
                 <h4 className="text-3xl font-semibold mb-6">{section.title}</h4>
                 <p className="text-lg">{section.content}</p>

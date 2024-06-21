@@ -6,7 +6,7 @@ const ContactPage = () => {
 
             <div className="max-w-4xl bg-gray-800 rounded-lg shadow-md p-8 flex">
                 <div className="bg-[#00b0f0] rounded-lg p-8 flex-shrink-0 w-1/3">
-                    <h2 className="text-white text-3xl font-bold mb-6">Contact information</h2>
+                    <h2 className="text-white text-3xl font-bold mb-6">Contact Information</h2>
                     <div className="text-white space-y-6">
                         <div>
                             <div className="flex items-center mb-2">
