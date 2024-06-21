@@ -123,7 +123,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
+                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00b0f0]">
                                 CONTACT US
                             </NavLink>
                         </li>
@@ -205,7 +205,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00a7ff]">
+                            <NavLink to="/contact-page" className="text-white text-lg leading-none py-2 px-4 rounded-md hover:text-gray-300 bg-[#00b0f0]">
                                 CONTACT US
                             </NavLink>
                         </li>

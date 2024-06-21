@@ -5,7 +5,7 @@ const ContactPage = () => {
         <div className="min-h-screen bg-gray-900 flex items-center justify-center p-6">
 
             <div className="max-w-4xl bg-gray-800 rounded-lg shadow-md p-8 flex">
-                <div className="bg-blue-500 rounded-lg p-8 flex-shrink-0 w-1/3">
+                <div className="bg-[#00b0f0] rounded-lg p-8 flex-shrink-0 w-1/3">
                     <h2 className="text-white text-3xl font-bold mb-6">Contact information</h2>
                     <div className="text-white space-y-6">
                         <div>
@@ -41,7 +41,7 @@ const ContactPage = () => {
                         </div>
                         <input type="text" className="w-full p-4 rounded-md bg-gray-700 text-white" placeholder="Subject" required />
                         <textarea className="w-full p-4 rounded-md bg-gray-700 text-white" placeholder="Enter your message" required></textarea>
-                        <button type="submit" className="w-full p-4 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-colors">Send message</button>
+                        <button type="submit" className="w-full p-4 rounded-md bg-[#00b0f0] text-white hover:bg-[#00b0f0] transition-colors">Send message</button>
                     </form>
                 </div>
             </div>
