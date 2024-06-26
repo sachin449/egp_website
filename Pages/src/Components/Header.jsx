@@ -1,7 +1,9 @@
+
+
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
- 
+
 const Header = () => {
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
@@ -9,50 +11,59 @@ const Header = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isAtTop, setIsAtTop] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
- 
+
   const solutionsTimer = useRef(null);
   const resourcesTimer = useRef(null);
- 
+
   const handleMouseEnterServices = () => {
     clearTimeout(solutionsTimer.current);
     setSolutionsOpen(true);
     setResourcesOpen(false);
   };
- 
+
   const handleMouseLeaveServices = () => {
     solutionsTimer.current = setTimeout(() => {
       setSolutionsOpen(false);
     }, 2000);
   };
- 
+
   const handleMouseEnterMarkets = () => {
     clearTimeout(resourcesTimer.current);
     setResourcesOpen(true);
     setSolutionsOpen(false);
   };
- 
+
   const handleMouseLeaveMarkets = () => {
     resourcesTimer.current = setTimeout(() => {
       setResourcesOpen(false);
     }, 2000);
   };
- 
+
   const handleMouseEnterSolutionsDropdown = () => {
     clearTimeout(solutionsTimer.current);
   };
- 
+
   const handleMouseLeaveSolutionsDropdown = () => {
-    setSolutionsOpen(false);
+    solutionsTimer.current = setTimeout(() => {
+      setSolutionsOpen(false);
+    }, 2000);
   };
- 
+
   const handleMouseEnterResourcesDropdown = () => {
     clearTimeout(resourcesTimer.current);
   };
- 
+
   const handleMouseLeaveResourcesDropdown = () => {
+    resourcesTimer.current = setTimeout(() => {
+      setResourcesOpen(false);
+    }, 2000);
+  };
+
+  const handleMouseEnterOtherItems = () => {
+    setSolutionsOpen(false);
     setResourcesOpen(false);
   };
- 
+
   const controlHeader = () => {
     if (typeof window !== "undefined") {
       setIsAtTop(window.scrollY === 0);
@@ -66,18 +77,18 @@ const Header = () => {
       setLastScrollY(window.scrollY);
     }
   };
- 
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlHeader);
- 
+
       // cleanup function
       return () => {
         window.removeEventListener("scroll", controlHeader);
       };
     }
   }, [lastScrollY]);
- 
+
   return (
     <header
       className={`fixed top-0 left-0 z-30 w-full transition-transform duration-1000 ${showHeader ? "translate-y-0" : "-translate-y-full"} ${isAtTop ? "bg-black bg-opacity-50" : "bg-black"}`}
@@ -90,7 +101,8 @@ const Header = () => {
         </div>
         <nav className="hidden md:flex">
           <ul className="flex items-center space-x-8">
-            <li className="relative group hover:scale-105">
+            <li className="relative group hover:scale-105"
+              onMouseEnter={handleMouseEnterOtherItems}>
               <NavLink
                 to="/about-us"
                 className="text-white font-semibold text-md leading-none py-2 hover:text-[#00B0F0]"
@@ -100,10 +112,10 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="relative group hover:scale-105"
-              onMouseLeave={handleMouseLeaveServices}>
+              onMouseLeave={handleMouseLeaveServices}
+              onMouseEnter={handleMouseEnterServices}>
               <button
                 className="text-white font-semibold text-md leading-none py-2 hover:text-[#00B0F0]"
-                onMouseEnter={handleMouseEnterServices}
               >
                 Services
                 <span className="absolute left-0 bottom-[-8px] block h-0.5 w-0 bg-[#00B0F0] transition-all duration-500 group-hover:w-full"></span>
@@ -136,10 +148,10 @@ const Header = () => {
               )}
             </li>
             <li className="relative group hover:scale-105"
-              onMouseLeave={handleMouseLeaveMarkets}>
+              onMouseLeave={handleMouseLeaveMarkets}
+              onMouseEnter={handleMouseEnterMarkets}>
               <button
                 className="text-white font-semibold text-md leading-none py-2 hover:text-[#00B0F0]"
-                onMouseEnter={handleMouseEnterMarkets}
               >
                 Markets
                 <span className="absolute left-0 bottom-[-8px] block h-0.5 w-0 bg-[#00B0F0] transition-all duration-500 group-hover:w-full"></span>
@@ -179,7 +191,8 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li className="relative group hover:scale-105">
+            <li className="relative group hover:scale-105"
+              onMouseEnter={handleMouseEnterOtherItems}>
               <NavLink
                 to="/careers"
                 className="text-white font-semibold text-md leading-none py-2 hover:text-[#00B0F0]"
@@ -188,7 +201,8 @@ const Header = () => {
                 <span className="absolute left-0 bottom-[-8px] block h-0.5 w-0 bg-[#00B0F0] transition-all duration-500 group-hover:w-full"></span>
               </NavLink>
             </li>
-            <li className="relative group hover:scale-105">
+            <li className="relative group hover:scale-105"
+              onMouseEnter={handleMouseEnterOtherItems}>
               <NavLink
                 to="/contact-page"
                 className="text-white font-semibold text-md leading-none py-2 hover:text-[#00B0F0]"
@@ -199,7 +213,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center space-x-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white text-2xl"
@@ -301,5 +315,5 @@ const Header = () => {
     </header>
   );
 };
- 
+
 export default Header;

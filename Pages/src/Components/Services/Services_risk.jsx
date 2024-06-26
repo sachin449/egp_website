@@ -131,8 +131,8 @@ export const Services_risk = () => {
                   className="flex justify-between items-center cursor-pointer bg-transparent text-gray-700 border-b border-gray-300 py-2"
                   onClick={() => handleToggle(index)}
                 >
-                  <h2 className="text-xl sm:text-xl ">{category.title}</h2>
-                  <span className="text-xl sm:text-xl">
+                  <h2 className="text-lg sm:text-xl ">{category.title}</h2>
+                  <span className="text-lg sm:text-xl">
                     {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>

@@ -84,8 +84,8 @@ const Services_ehs = () => {
                   onClick={() => handleToggle(index)}
                   style={{ minHeight: '48px' }} // Ensure a minimum height for consistent baseline alignment
                 >
-                  <h2 className="text-xl sm:text-xl flex-1">{category.title}</h2>
-                  <span className="text-xl sm:text-xl flex-shrink-0 ml-4">
+                  <h2 className="text-lg sm:text-xl flex-1">{category.title}</h2>
+                  <span className="text-lg sm:text-xl flex-shrink-0 ml-4">
                     {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>

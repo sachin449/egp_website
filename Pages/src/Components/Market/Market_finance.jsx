@@ -61,12 +61,12 @@ export const Market_finance = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
         {/* Heading and Subheading */}
-        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
-          <div className="container mx-auto flex flex-col justify-end h-full">  
+      <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+          <div className="container mx-auto flex flex-col justify-end h-full">
             <div className="mb-20">
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Financial Institution And Funds</h1>
-              <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-               We have been providing services to Client in sectors of Infrastructure
+              <h2 className="w-full sm:w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+              We have been providing services to Client in sectors of Infrastructure
                & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
               Financial Institution & Funds and Health & Education.
               </h2>

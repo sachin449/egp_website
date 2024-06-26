@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaYoutube, FaLinkedin } from "react-icons/fa";
-
+ 
 const Footer = () => {
   const Markets = [
     { name: "Manufacturing", link: "/market-manufacturing" },
@@ -21,21 +21,21 @@ const Footer = () => {
     { name: "Contact Us", link: "/contact-page" },
     { name: "Careers", link: "/careers" }
   ];
-
+ 
   return (
-    <footer className="bg-black text-gray-400 p-10 inset-x-0 bottom-0 h-[50vh]">
-      <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start h-full">
+    <footer className="bg-black text-gray-400 p-6 md:p-10 inset-x-0 bottom-0">
+      <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start">
         {/* Sustainatrix Section */}
-        <div className="flex flex-col">
-          <div className="items-center mb-3 w-full md:w-auto">
+        <div className="w-full md:w-auto flex flex-col items-start md:items-start mb-6 md:mb-0">
+          <div className="flex items-center mb-3 w-full md:w-auto">
             <img
               src="egplogo.png"
               alt="Sustainatrix Logo"
-              className="w-30 h-16 mt-4 mr-4"
+              className="w-30 h-12 md:w-30 md:h-16 lg:w-[300px] lg:h-18"
             />
           </div>
           {/* Social Media Logos */}
-          <div className="flex space-x-10 mt-8 ml-16">
+          <div className="flex space-x-6 md:space-x-10 mt-4 mr-6 md:mt-8">
             <a
               href="https://twitter.com"
               target="_blank"
@@ -62,13 +62,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+ 
         {/* Markets Section */}
-        <div className="flex flex-col mb-3 w-full sm:w-auto">
+        <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Markets
           </h5>
-          <ul>
+          <ul className="space-y-2 text-sm md:text-sm">
             {Markets.map((market, index) => (
               <li
                 key={index}
@@ -79,13 +79,13 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
+ 
         {/* Our Services */}
-        <div className="flex flex-col mb-3 w-full sm:w-auto">
+        <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Our Services
           </h5>
-          <ul>
+          <ul className="space-y-2 text-sm">
             {Services.map((service, index) => (
               <li
                 key={index}
@@ -96,15 +96,13 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
-      
-
+ 
         {/* Quick Links */}
-        <div className="flex flex-col mb-3 w-full sm:w-auto">
+        <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
             Quick Links
           </h5>
-          <ul>
+          <ul className="space-y-2 text-sm">
             {QuickLinks.map((link, index) => (
               <li
                 key={index}
@@ -116,8 +114,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
-      <div className="text-center bg-black text-gray-300 text-xs w-full">
+ 
+      <div className="text-center bg-black text-gray-300 text-xs mt-6 md:mt-10">
         © All Rights Reserved 2021-2024
         <br />
         esggp.org
@@ -125,5 +123,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default Footer;
