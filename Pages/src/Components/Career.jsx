@@ -97,7 +97,7 @@ const Career = () => {
         {/* Main container */}
         <header className="text-center py-8 mt-10">
           {/* Header section */}
-          <h1 className="text-3xl font-bold text-white">Come join us ➡️</h1>
+          <h1 className="text-4xl font-bold text-white">Come Join Us </h1>
           {/* Header title */}
         </header>
         <div className="w-full max-w-7xl p-8">
@@ -120,7 +120,7 @@ const Career = () => {
                     <p className="text-gray-500 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac diam ac urna.</p>
                     {/* Job description */}
                   </div>
-                  <button className="mt-2 px-3 py-1 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white rounded-lg self-start transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
+                  <button className="mt-2 px-3 py-1 bg-gradient-to-r from-blue-200 to-[#00b0f0] hover:from-blue-600 hover:to-[#00b0f0] text-white rounded-lg self-start transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
                     Learn More
                   </button>
                   {/* Learn More button */}
@@ -157,9 +157,9 @@ const Career = () => {
               ))}
             </ul>
             <h3 className="text-2xl font-semibold mt-4">How to Apply</h3>
-            <p className="text-lg mb-4">Submit your updated CVs to <a href="mailto:hr@esggp.org" className="underline text-blue-400">hr@esggp.org</a>.</p>
-            <button className="mt-2 px-4 py-2 bg-gradient-to-r from-[#00b0f0] to-[#12556d] hover:from-[#00b0f0] hover:to-[#174b67] text-white rounded-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
-              Apply Now
+            <p className="text-lg mb-4">Submit your updated CVs to <a href="mailto:hr@esggp.org" className=" text-[#00b0f0]">hr@esggp.org</a>.</p>
+            <button className="mt-2 px-4 py-2 bg-gradient-to-r from-blue-200 to-[#00b0f0] hover:from-blue-600 hover:to-[#00b0f0] text-white rounded-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
+            <a href="mailto:hr@esggp.org" >Apply Now</a>
             </button>
           </div>
         ))}

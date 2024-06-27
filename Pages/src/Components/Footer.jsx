@@ -19,7 +19,9 @@ const Footer = () => {
   const QuickLinks = [
     { name: "About Us", link: "/about-us" },
     { name: "Contact Us", link: "/contact-page" },
-    { name: "Careers", link: "/careers" }
+    { name: "Careers", link: "/careers" },
+    { name: "Terms & Conditions", link: "/" },
+    { name: "Privacy Policy", link: "/" },
   ];
  
   return (

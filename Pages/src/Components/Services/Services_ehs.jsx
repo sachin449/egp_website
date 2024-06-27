@@ -75,7 +75,7 @@ const Services_ehs = () => {
       {/* New Section: Case Showcase */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
-          <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00a7ff] mb-12">Our Areas Of Expertise</h1>
+          <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00b0f0] mb-12">Our Areas Of Expertise</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
             {categories.map((category, index) => (
               <div key={index} className="mb-8">

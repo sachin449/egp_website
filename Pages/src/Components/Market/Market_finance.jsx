@@ -78,11 +78,11 @@ export const Market_finance = () => {
       {/* Content Below Video */}
       <div className="bg-white py-16">
         <div className="container mx-auto">
-          <h1 className="text-5xl sm:text-5xl font-medium-bold text-blue-600 px-4 mb-12 ">Market Experience</h1>
+          <h1 className="text-5xl sm:text-5xl font-medium-bold text-[#00b0f0] px-4 mb-12 ">Market Experience</h1>
           {projects.map((project, index) => (
             <div key={index} className={`flex flex-col sm:flex-row ${index % 2 === 0 ? '' : 'sm:flex-row-reverse'} items-center mb-8`}>
               <div className="w-full sm:w-1/2 px-4">
-                <h4 className="text-2xl sm:text-2xl font-medium-bold text-blue-600 mb-6">{project.title}</h4>
+                <h4 className="text-2xl sm:text-2xl font-medium-bold text-[#00b0f0] mb-6">{project.title}</h4>
                 <p className="my-6 sm:text-xl text-gray-700">{project.description}</p>
               </div>
               <div className="w-full sm:w-1/2 px-4">
@@ -96,7 +96,7 @@ export const Market_finance = () => {
         {/* New Section: How we can help */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
-          <h1 className="text-5xl sm:text-4xl font-medium-bold px-20 text-blue-600 mb-12">How we can help?</h1>
+          <h1 className="text-5xl sm:text-4xl font-medium-bold px-20 text-[#00b0f0] mb-12">How we can help?</h1>
           <div className="mb-12">
             <p className="text-lg sm:text-xl px-20 text-gray-700 mb-6">
               The Financial Reinvention framework can help your organization effect a fundamental change in its performance to support revenue growth, become more cost-efficient, minimize risk, and improve operational resilience.
@@ -111,10 +111,10 @@ export const Market_finance = () => {
                 className="flex justify-between items-center cursor-pointer border-b border-gray-300 py-4"
                 onClick={() => handleToggle(index)}
               >
-                <h4 className="text-2xl sm:text-2xl font-medium-bold text-blue-600">
+                <h4 className="text-2xl sm:text-2xl font-medium-bold text-[#00b0f0]">
                   {help.title}
                 </h4>
-                <span className="text-xl sm:text-2xl font-medium-bold text-blue-600">
+                <span className="text-xl sm:text-2xl font-medium-bold text-[#00b0f0]">
                   {activeIndex === index ? '-' : '+'}
                 </span>
               </div>
