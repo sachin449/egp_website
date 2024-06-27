@@ -1,9 +1,7 @@
- 
 
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 
- 
 // Job Data
 const jobsData = [
   {
@@ -32,7 +30,7 @@ const jobsData = [
     more: "Learn More"
   }
 ];
- 
+
 // Job Details Data
 const jobDetailsData = [
   {
@@ -68,37 +66,31 @@ const jobDetailsData = [
     apply: "Submit your updated CVs to hr@esggp.org."
   }
 ];
- 
+
 // Career Component
 const Career = () => {
   return (
     <div>
-      
       <div className="w-full h-screen relative">
-    {/* Image Background */}
-    <img src="career001.jpg" alt="Market Manufacturing" className="absolute top-0 left-0 w-full h-full object-cover" />
+        {/* Image Background */}
+        <img src="career001.jpg" alt="Market Manufacturing" className="absolute top-0 left-0 w-full h-full object-cover" />
 
-    {/* Overlay */}
-    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
-    {/* Heading and Subheading */}
-    <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
-        <div className="mb-20">
+        {/* Heading and Subheading */}
+        <div className="relative container mx-auto flex flex-col justify-end h-full px-5 py-10 text-white">
+          <div className="mb-20">
             <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Careers</h1>
             <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-              We believe our people are our assets. We love what we do, and 
+              We believe our people are our assets. We love what we do, and
               if you share the same passion, you should get in touch with us.
-               Apply to the open positions in this page or alternatively write to 
-               us hr@esggp.org. We will find ways to join hands!
+              Apply to the open positions on this page or alternatively write to
+              us <a href="mailto:hr@esggp.org" className=" text-[#00b0f0]">hr@esggp.org</a>. We will find ways to join hands!
             </h2>
+          </div>
         </div>
-    </div>
-</div>
-
-
-
-
-
+      </div>
 
       {/* JOB's Card Section */}
       <div className="min-h-screen bg-gray-800 text-white flex flex-col items-center">
@@ -137,7 +129,7 @@ const Career = () => {
             </div>
           </SimpleBar>
         </div>
- 
+
         {/* Job Details Section */}
         {jobDetailsData.map((jobDetail, index) => (
           <div key={index} className="w-full max-w-7xl p-8 bg-gray-900 text-white mt-10 rounded-lg shadow-lg">
@@ -165,7 +157,7 @@ const Career = () => {
               ))}
             </ul>
             <h3 className="text-2xl font-semibold mt-4">How to Apply</h3>
-            <p className="text-lg mb-4">{jobDetail.apply}</p>
+            <p className="text-lg mb-4">Submit your updated CVs to <a href="mailto:hr@esggp.org" className="underline text-blue-400">hr@esggp.org</a>.</p>
             <button className="mt-2 px-4 py-2 bg-gradient-to-r from-[#00b0f0] to-[#12556d] hover:from-[#00b0f0] hover:to-[#174b67] text-white rounded-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
               Apply Now
             </button>
@@ -175,5 +167,5 @@ const Career = () => {
     </div>
   );
 };
- 
+
 export default Career;
