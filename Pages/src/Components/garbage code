@@ -1,0 +1,318 @@
+// const Marc = () => {
+//     return (
+//         <div className="h-screen relative flex">
+//             <div className="text-background-container w-[42%] ml-10 h-screen bg-gray-300 z-0">
+//                 <div className="text-container w-full h-full p-8 bg-transparent border-2 border-red-500 rounded-md z-10">
+//                     <h2 className="subheading text-2xl my-14 text-center mr-[90px]">Resource management and circular economy</h2>
+//                     <h1 className="heading text-4xl mb-16 mr-20">Garbage in – energy out: what you need to know when developing waste-to-energy projects</h1>
+//                     <p className="paragraph text-lg font-normal mr-20">
+//                         Rapid urbanisation in Southeast Asia means increased waste that needs to be managed.
+//                         Rapid urbanisation in Southeast Asia means increased waste that needs to be managed.
+//                         Rapid urbanisation in Southeast Asia means increased waste that needs to be managed.
+//                         While this is clearly a challenge given that the region’s population is expected to
+//                         rise from about 686.825 million to 724.664 million...
+//                     </p>
+//                 </div>
+//             </div>
+//             {/* Image Container */}
+//             <div className="image-container absolute top-1/4 right-[160px] w-[50%] h-[62vh]  bg-gray-500 z-20">
+//                 <img src="sec1.jpg" alt="Building" className="absolute inset-0 w-full h-full object-cover" />
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default Marc;
+
+
+
+// import React, { useRef, useEffect } from 'react';
+
+// const Marc = () => {
+//     const textSections = [
+//         {
+//             heading: "Garbage in – energy out: what you need to know when developing waste-to-energy projects",
+//             subheading: "Resource management and circular economy",
+//             paragraph: "Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the region’s population is expected to rise from about 686.825 million to 724.664 million..."
+//         },
+//         {
+//             heading: "The importance of recycling: how it helps our environment",
+//             subheading: "Sustainability and the future",
+//             paragraph: "Recycling plays a crucial role in managing waste and preserving natural resources. It helps reduce pollution and conserves materials that can be reused in new products."
+//         },
+//         {
+//             heading: "Innovative approaches to waste management",
+//             subheading: "Modern solutions",
+//             paragraph: "Innovation in waste management includes new technologies and practices that aim to reduce waste and increase efficiency in waste handling and recycling processes."
+//         },
+//         {
+//             heading: "Circular economy: a model for sustainable development",
+//             subheading: "Economic and environmental benefits",
+//             paragraph: "A circular economy promotes the reuse, repair, refurbishment, and recycling of materials to create a closed-loop system, minimizing waste and making the most of available resources."
+//         },
+//     ];
+
+//     const images = [
+//         "./sec1.jpg",
+//         "sec2.jpg",
+//         "sec3.jpg",
+//         "sec4.jpg"
+//     ];
+
+//     const textScrollRef = useRef(null);
+//     const imageScrollRef = useRef(null);
+
+//     const scrollTextCarousel = () => {
+//         if (textScrollRef.current) {
+//             if (textScrollRef.current.scrollLeft + textScrollRef.current.clientWidth >= textScrollRef.current.scrollWidth) {
+//                 textScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+//             } else {
+//                 textScrollRef.current.scrollBy({ left: textScrollRef.current.clientWidth, behavior: 'smooth' });
+//             }
+//         }
+//     };
+
+//     const scrollImageCarousel = () => {
+//         if (imageScrollRef.current) {
+//             if (imageScrollRef.current.scrollLeft + imageScrollRef.current.clientWidth >= imageScrollRef.current.scrollWidth) {
+//                 imageScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+//             } else {
+//                 imageScrollRef.current.scrollBy({ left: imageScrollRef.current.clientWidth, behavior: 'smooth' });
+//             }
+//         }
+//     };
+
+//     useEffect(() => {
+//         const textInterval = setInterval(scrollTextCarousel, 3000);
+//         const imageInterval = setInterval(scrollImageCarousel, 3000);
+
+//         return () => {
+//             clearInterval(textInterval);
+//             clearInterval(imageInterval);
+//         };
+//     }, []);
+
+//     return (
+//         <div className="h-screen relative flex">
+//             {/* Text Carousel */}
+//             <div className="text-background-container w-[42%] ml-10 h-screen bg-gray-300 z-0 overflow-hidden" ref={textScrollRef}>
+//                 <div className="flex">
+//                     {textSections.map((section, index) => (
+//                         <div key={index} className="text-container w-full h-full p-8 bg-transparent border-2  rounded-md z-10 flex-shrink-0">
+//                             <h2 className="subheading text-2xl my-14 text-center">{section.subheading}</h2>
+//                             <h1 className="heading text-4xl mb-16">{section.heading}</h1>
+//                             <p className="paragraph text-lg font-normal">
+//                                 {section.paragraph}
+//                             </p>
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+
+//             {/* Image Carousel */}
+//             <div className="image-container absolute top-1/4 right-[160px] w-[50%] h-[62vh] bg-gray-500 z-20 overflow-hidden" ref={imageScrollRef}>
+//                 <div className="flex">
+//                     {images.map((src, index) => (
+//                         <div key={index} className="w-full h-full relative flex-shrink-0">
+//                             <img src={src} alt={`Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-cover" />
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default Marc;
+
+// import { useRef, useEffect } from 'react';
+
+// const Marc = () => {
+//     const textSections = [
+//         {
+//             heading: "Garbage in – energy out: what you need to know when developing waste-to-energy projects",
+//             subheading: "Resource management and circular economy",
+//             paragraph: "Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the region’s population is expected to rise from about 686.825 million to 724.664 million..."
+//         },
+//         {
+//             heading: "The importance of recycling: how it helps our environment",
+//             subheading: "Sustainability and the future",
+//             paragraph: "Recycling plays a crucial role in managing waste and preserving natural resources. It helps reduce pollution and conserves materials that can be reused in new products."
+//         },
+//         {
+//             heading: "Innovative approaches to waste management",
+//             subheading: "Modern solutions",
+//             paragraph: "Innovation in waste management includes new technologies and practices that aim to reduce waste and increase efficiency in waste handling and recycling processes."
+//         },
+//         {
+//             heading: "Circular economy: a model for sustainable development",
+//             subheading: "Economic and environmental benefits",
+//             paragraph: "A circular economy promotes the reuse, repair, refurbishment, and recycling of materials to create a closed-loop system, minimizing waste and making the most of available resources."
+//         },
+//     ];
+
+//     const images = [
+//         "sec1.jpg",
+//         "sec2.jpg",
+//         "sec3.jpg",
+//         "sec4.jpg"
+//     ];
+
+//     const textScrollRef = useRef(null);
+//     const imageScrollRef = useRef(null);
+
+//     const scrollTextCarousel = () => {
+//         if (textScrollRef.current) {
+//             const { scrollLeft, clientWidth, scrollWidth } = textScrollRef.current;
+//             if (scrollLeft + clientWidth >= scrollWidth) {
+//                 textScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+//             } else {
+//                 textScrollRef.current.scrollBy({ left: clientWidth, behavior: 'smooth' });
+//             }
+//         }
+//     };
+
+//     const scrollImageCarousel = () => {
+//         if (imageScrollRef.current) {
+//             const { scrollLeft, clientWidth, scrollWidth } = imageScrollRef.current;
+//             if (scrollLeft + clientWidth >= scrollWidth) {
+//                 imageScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+//             } else {
+//                 imageScrollRef.current.scrollBy({ left: clientWidth, behavior: 'smooth' });
+//             }
+//         }
+//     };
+
+//     useEffect(() => {
+//         const textInterval = setInterval(scrollTextCarousel, 3000);
+//         const imageInterval = setInterval(scrollImageCarousel, 3000);
+
+//         return () => {
+//             clearInterval(textInterval);
+//             clearInterval(imageInterval);
+//         };
+//     }, []);
+
+//     return (
+//         <div className="h-screen relative flex">
+//             {/* Text Carousel */}
+//             <div className="text-background-container w-[42%] ml-10 h-screen bg-gray-300 z-0 overflow-hidden" ref={textScrollRef}>
+//                 <div className="flex">
+//                     {textSections.map((section, index) => (
+//                         <div key={index} className="text-container w-full h-full p-8 bg-transparent border-2 border-red-500 rounded-md z-10 flex-shrink-0">
+//                             <h2 className="subheading text-2xl my-14 text-center">{section.subheading}</h2>
+//                             <h1 className="heading text-4xl mb-16">{section.heading}</h1>
+//                             <p className="paragraph text-lg font-normal">
+//                                 {section.paragraph}
+//                             </p>
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+
+//             {/* Image Carousel */}
+//             <div className="image-container absolute top-1/4 right-[160px] w-[50%] h-[62vh] bg-gray-500 z-20 overflow-hidden" ref={imageScrollRef}>
+//                 <div className="flex">
+//                     {images.map((src, index) => (
+//                         <div key={index} className="w-full h-full relative flex-shrink-0">
+//                             <img src={src} alt={`Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-cover" />
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default Marc;
+
+import { useRef, useEffect } from 'react';
+
+const Marc = () => {
+    const sections = [
+        {
+            heading: "Garbage in – energy out: what you need to know when developing waste-to-energy projects",
+            subheading: "Resource management and circular economy",
+            paragraph: "Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the region’s population is expected to rise from about 686.825 million to 724.664 million...",
+            src: "sec1.jpg",
+            alt: "Building 1"
+        },
+        {
+            heading: "The importance of recycling: how it helps our environment",
+            subheading: "Sustainability and the future",
+            paragraph: "Recycling plays a crucial role in managing waste and preserving natural resources. It helps reduce pollution and conserves materials that can be reused in new products.",
+            src: "sec2.jpg",
+            alt: "Building 2"
+        },
+        {
+            heading: "Innovative approaches to waste management",
+            subheading: "Modern solutions",
+            paragraph: "Innovation in waste management includes new technologies and practices that aim to reduce waste and increase efficiency in waste handling and recycling processes.",
+            src: "sec3.jpg",
+            alt: "Building 3"
+        },
+        {
+            heading: "Circular economy: a model for sustainable development",
+            subheading: "Economic and environmental benefits",
+            paragraph: "A circular economy promotes the reuse, repair, refurbishment, and recycling of materials to create a closed-loop system, minimizing waste and making the most of available resources.",
+            src: "sec4.jpg",
+            alt: "Building 4"
+        },
+    ];
+
+    const textScrollRef = useRef(null);
+    const imageScrollRef = useRef(null);
+
+    const scrollCarousel = (ref) => {
+        if (ref.current) {
+            const { scrollLeft, clientWidth, scrollWidth } = ref.current;
+            if (scrollLeft + clientWidth >= scrollWidth) {
+                ref.current.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                ref.current.scrollBy({ left: clientWidth, behavior: 'smooth' });
+            }
+        }
+    };
+
+    useEffect(() => {
+        const textInterval = setInterval(() => scrollCarousel(textScrollRef), 3000);
+        const imageInterval = setInterval(() => scrollCarousel(imageScrollRef), 3000);
+
+        return () => {
+            clearInterval(textInterval);
+            clearInterval(imageInterval);
+        };
+    }, []);
+
+    return (
+        <div className="h-screen relative flex">
+            {/* Text Carousel */}
+            <div className="text-background-container w-[42%] ml-10 h-screen bg-gray-300 z-0 overflow-hidden flex items-center justify-center" ref={textScrollRef}>
+                <div className="flex">
+                    {sections.map((section, index) => (
+                        <div key={index} className="text-container w-full h-full p-8 bg-transparent border-2 border-red-100 rounded-md z-10 flex-shrink-0 mt-28">
+                            <h2 className="subheading text-2xl my-14 text-balance">{section.subheading}</h2>
+                            <h1 className="heading text-4xl mb-16 text-balance">{section.heading}</h1>
+                            <p className="paragraph text-lg font-normal text-balance">
+                                {section.paragraph}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Image Carousel */}
+            <div className="image-container absolute top-1/4 right-0 w-[50%] h-[62vh] bg-gray-500 z-20 overflow-hidden" ref={imageScrollRef}>
+                <div className="flex">
+                    {sections.map((section, index) => (
+                        <div key={index} className="w-full h-full relative flex-shrink-0">
+                            <img src={section.src} alt={section.alt} className="w-screen h-full object-cover" onError={() => console.error(`Error loading image ${section.src}`)} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Marc;
