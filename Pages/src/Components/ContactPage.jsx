@@ -2,6 +2,9 @@ import  { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaEnvelope, } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
+
 
 const ContactPage = () => {
     const formRef = useRef();
@@ -66,18 +69,28 @@ const ContactPage = () => {
                     <div className="text-white space-y-6">
                         <div>
                             <div className="flex items-center mb-2">
-                                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 2l4 4m0 0l-6.586 6.586a2 2 0 01-.707.293l-3.757.752a1 1 0 01-1.179-1.179l.752-3.757a2 2 0 01.293-.707L18 6m4-4L10 10m-7 5h3m4 0h6m-4-4h4m-4 4a9 9 0 110-18 9 9 0 0118 0z"></path>
-                                </svg>
+                            <a
+              href="mailto:info@sustainatrix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white transition duration-300 ease-in-out"
+            >
+              <FaEnvelope size={24} />
+            </a>
                                 <span className="ml-2 text-sm sm:text-lg">Email</span>
                             </div>
                             <p className="text-sm sm:text-lg">support@esggp.org</p>
                         </div>
                         <div>
                             <div className="flex items-center mb-2">
-                                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10l1-1m10-6H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2v-5M16 2h6m-3 3v6m0 0h6m-6 0H7a4 4 0 00-4 4v4a2 2 0 002 2h12a2 2 0 002-2v-5a9 9 0 00-9-9H4z"></path>
-                                </svg>
+                            <a
+              href="mailto:info@sustainatrix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white transition duration-300 ease-in-out"
+            >
+              <FaPhoneVolume size={24} />
+            </a>
                                 <span className="ml-2 text-sm sm:text-lg">Phone</span>
                             </div>
                             <p className="text-sm sm:text-lg">+91 xxxxxxxxxx</p>
