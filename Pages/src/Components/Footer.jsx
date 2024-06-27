@@ -1,6 +1,8 @@
+
 import { NavLink } from "react-router-dom";
-import { FaYoutube, FaLinkedin } from "react-icons/fa";
- 
+import {  FaLinkedin, FaEnvelope, } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 const Footer = () => {
   const Markets = [
     { name: "Manufacturing", link: "/market-manufacturing" },
@@ -23,7 +25,7 @@ const Footer = () => {
     { name: "Terms & Conditions", link: "/" },
     { name: "Privacy Policy", link: "/" },
   ];
- 
+
   return (
     <footer className="bg-black text-gray-400 p-6 md:p-10 inset-x-0 bottom-0">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start">
@@ -37,23 +39,24 @@ const Footer = () => {
             />
           </div>
           {/* Social Media Logos */}
-          <div className="flex space-x-6 md:space-x-10 mt-4 mr-6 md:mt-8">
+          <div className="flex space-x-6 md:space-x-10 mt-4 mr-6 ml-14 md:mt-8">
+            <a
+              href="mailto:info@sustainatrix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition duration-300 ease-in-out"
+            >
+              <FaEnvelope size={24} />
+            </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition duration-300 ease-in-out"
             >
-              <img src="twitter.png" alt="X Logo" width={24} height={24} />
+              <FaXTwitter  size={24} />
             </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition duration-300 ease-in-out"
-            >
-              <FaYoutube size={24} />
-            </a>
+            
             <a
               href="https://linkedin.com"
               target="_blank"
@@ -64,7 +67,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
- 
+
         {/* Markets Section */}
         <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
@@ -81,7 +84,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
- 
+
         {/* Our Services */}
         <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
@@ -98,7 +101,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
- 
+
         {/* Quick Links */}
         <div className="w-full md:w-auto mb-6 md:mb-0">
           <h5 className="text-[#00a7ff] font-bold mb-3 transition duration-500 ease-in-out transform hover:scale-105">
@@ -116,14 +119,14 @@ const Footer = () => {
           </ul>
         </div>
       </div>
- 
+
       <div className="text-center bg-black text-gray-300 text-xs mt-6 md:mt-10">
-        © All Rights Reserved 2021-2024
+      Copyright © 2021 | Powered by ESG Global Partners Private Limited
         <br />
         esggp.org
       </div>
     </footer>
   );
 };
- 
+
 export default Footer;
